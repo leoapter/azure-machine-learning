@@ -29,6 +29,9 @@
 | **Pasta URI**           | Identificador que aponta para uma pasta de dados.                               | Usado para organizar e acessar múltiplos arquivos.                                           | Facilita a gestão de dados em projetos.                                         |
 | **JSON**                | Formato leve de dados para transmissão de informações.                          | Usado para comunicação entre APIs e armazenamento de metadados.                             | Amplamente utilizado em sistemas modernos.                                      |
 | **Data Drift**          | Mudanças nos dados que podem impactar a performance do modelo.                  | Usado para monitorar e ajustar modelos em produção.                                          | Importante para garantir precisão contínua.                                     |
+| **Tabela Relacional**   | Estrutura de dados em formato de tabela com linhas e colunas.                   | Usado para armazenamento e manipulação de dados organizados.                                | Compatível com bancos de dados SQL.                                             |
+| **Data Store**          | Recurso que armazena dados integrados no Azure ML.                              | Usado para conectar fontes de dados externas ao ambiente do Azure.                          | Facilita o acesso centralizado aos dados.                                       |
+| **Metadados**           | Dados sobre os dados, como origem e formato dos arquivos.                       | Usado para descrever e organizar ativos de dados.                                            | Essenciais para rastreabilidade e governança de dados.                          |
 
 ---
 
@@ -41,6 +44,13 @@
 | **Automação**           | Uso de ferramentas para executar tarefas sem intervenção manual.                | Usado para aumentar a eficiência e consistência de processos.                               | Amplamente utilizado em aprendizado de máquina e operações de TI.               |
 | **ML Lifecycle**        | Ciclo de vida do aprendizado de máquina, que inclui desenvolvimento, treinamento, implantação e monitoramento. | Usado para gerenciar projetos de ML.                                                         | Essencial para governança e rastreabilidade.                                    |
 | **Validação Cruzada**   | Técnica para avaliar a performance do modelo dividindo os dados em múltiplas partes. | Usado para garantir que o modelo generaliza bem para novos dados.                            | Minimiza risco de overfitting.                                                  |
+| **Job**                         | Qualquer unidade de execução dentro do Azure ML, incluindo treinamento, inferência e pipelines. | Usado para gerenciar tarefas específicas.                                                    | Facilita a organização de processos.                                           |
+| **Job de Treinamento**           | Trabalho de execução focado no treinamento de um modelo de aprendizado de máquina. | Usado durante o desenvolvimento do modelo.                                                  | Pode ser escalado usando clusters.                                             |
+| **Job de Comando**               | Um job genérico que executa um comando, como um script Python ou Shell.          | Usado para tarefas personalizadas no Azure ML.                                               | Grande flexibilidade para automação.                                           |
+| **Ajuste de Hiperparâmetros**    | Processo de otimizar os hiperparâmetros para melhorar a performance do modelo.   | Usado para obter o melhor desempenho de modelos complexos.                                   | Pode ser automatizado no Azure ML.                                             |
+| **Hiperparâmetros**              | Parâmetros ajustados antes do treinamento que controlam o comportamento do modelo. | Usado para personalizar e otimizar o treinamento.                                            | Exemplo: taxa de aprendizado, número de camadas.                               |
+
+---
 
 ---
 
@@ -67,5 +77,19 @@
 | **Validação**            | Processo de avaliação da qualidade do modelo usando dados de teste.             | Usado para verificar se o modelo está funcionando corretamente.                              | Essencial para prevenir overfitting.                                            |
 | **Regressão**            | Técnica usada para prever valores contínuos.                                    | Usado em problemas como previsão de preços ou demanda.                                       | Base para modelos preditivos.                                                   |
 | **Classificação**        | Técnica para prever categorias ou rótulos em dados.                             | Usado em tarefas como detecção de spam ou diagnóstico médico.                                | Essencial para modelos supervisionados.                                         |
+| **Overfitting**          | Fenômeno em que um modelo performa bem nos dados de treino, mas mal em novos dados. | Usado como sinal para ajustar o treinamento e evitar erros futuros.                         | Importante monitorar sempre.                                                    |
+| **Cross-Validation**    | Técnica para avaliar o modelo dividindo dados em várias partes para teste e treino. | Usado para evitar vieses de treinamento.                                                     | Melhora a generalização dos modelos.                                            |
+
 
 ---
+
+## Gerenciamento de Políticas
+
+| **Termo**                       | **Significado**                                                                 | **Quando, Onde e Porquê Usar**                                                                 | **Comentários**                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| **Política Bandit**              | Estratégia que encerra jobs com base na performance relativa dos mesmos.        | Usado para economizar recursos e acelerar experimentos.                                       | Foco em resultados eficientes.                                                 |
+| **Política de Encerramento Mediana** | Interrompe experimentos com desempenho abaixo da mediana em estágios iniciais. | Usado para economizar recursos em jobs ineficientes.                                          | Boa para projetos iterativos.                                                  |
+| **Política de Seleção de Truncamento** | Encerra um percentual dos jobs com desempenho mais baixo.                      | Usado para priorizar os jobs mais promissores em otimizações.                                 | Combina bem com ajuste de hiperparâmetros.                                     |
+
+---
+
