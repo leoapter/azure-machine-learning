@@ -100,6 +100,18 @@ Após o treinamento, você pode implantar o modelo como um serviço:
 
 2. Configure e implante um endpoint para inferência.
 
+## 8. Exclusão de Recursos para Evitar Custos Desnecessários
+
+Para evitar cobranças inesperadas, exclua os recursos criados ao finalizar o uso:
+
+1. No [Portal do Azure](https://portal.azure.com/), acesse "Grupos de Recursos".
+2. Localize o grupo de recursos que contém os recursos do Azure Machine Learning.
+3. Clique em "Excluir grupo de recursos" e confirme a ação.
+4. Alternativamente, delete individualmente instâncias de computação, modelos e experimentos desnecessários.
+
+**Observação:** Mantenha os recursos apenas se estiver no meio de um treinamento ou outra necessidade pontual.
+
+
 ## Referências
 
 - [Documentação Oficial do Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/?view=azureml-api-2)
