@@ -23,5 +23,27 @@ Mais informações sobre os serviços gratuitos podem ser encontradas [aqui](htt
 - [Azure for College Students - detalhes da oferta](https://azure.microsoft.com/pt-br/pricing/offers/ms-azr-0170p/) 
 - Para mais detalhes sobre como renovar, visite o [suporte oficial do Azure](https://learn.microsoft.com/pt-br/azure/azure-supportability/).
 
+---
 
+# Alternativas para Obter uma Conta Gratuita no Azure
+
+Se você não conseguir validar seu ID como estudante, ainda há opções para acessar o **Microsoft Azure** e explorar seus recursos. Veja as alternativas abaixo:
+
+## Conta Gratuita do Azure
+Você pode criar uma conta gratuita do Azure e aproveitar:
+- **US$ 200 em créditos** para utilizar nos primeiros 30 dias.
+- **Serviços gratuitos por 12 meses**, incluindo máquinas virtuais, bancos de dados e armazenamento.
+
+Para configurar sua conta gratuita, acesse a página oficial do [Azure Free Account](https://azure.microsoft.com/pt-br/free/).
+
+## Programas de Treinamento e Certificação
+A Microsoft oferece treinamentos gratuitos que incluem acesso temporário ao Azure. Verifique as oportunidades no [Microsoft Learn](https://learn.microsoft.com/pt-br/).
+
+## Parcerias Educacionais
+Algumas instituições de ensino têm parcerias com a Microsoft para oferecer acesso ao Azure. Consulte sua universidade ou escola para saber se há algum programa disponível.
+
+## Comunidade e Hackathons
+Participe de eventos da comunidade Microsoft, como hackathons, que frequentemente oferecem acesso gratuito ao Azure para os participantes.
+
+---
 
